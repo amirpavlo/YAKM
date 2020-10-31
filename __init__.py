@@ -269,7 +269,7 @@ This is the source of the animation data')
 
 def unregister():
     bpy.utils.unregister_class(YAKM_PT_main)
-    bpy.utils.register_class(YAKM_OT_delete_keyframes)
+    bpy.utils.unregister_class(YAKM_OT_delete_keyframes)
 
 if __name__ == "__main__":
     register()
